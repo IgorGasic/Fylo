@@ -1,0 +1,46 @@
+.client {
+    padding: 45px 30px;
+    border: 5px;
+    position: relative;
+    background-color: $bgDarkblue;
+    margin-top: 50px;
+
+    @include respond (mobile){
+        padding: 25px 20px;
+    }
+}
+
+.client--one::after {
+    content: url("../images/bg-quotes.png");
+    position: absolute;
+    top: -35px;
+    left: -15px;
+
+}
+
+.client__text {
+    margin-bottom: 25px;
+    color: $white;
+}
+
+.client__profile {
+    display: flex;
+}
+
+.client__img {
+    width: 27px;
+    height: 27px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+.client__name {
+    font-size: 10px;
+    color: $white;
+}
+
+.client__position {
+    font-size: 8px;
+    color: silver;
+
+}

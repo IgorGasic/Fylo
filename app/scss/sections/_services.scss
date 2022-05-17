@@ -1,0 +1,95 @@
+.services {
+    width: 100%;
+    height: 100%;
+    background-color: $mainDarkBlue;
+}
+
+.services__container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 92px 80px;
+    padding: 130px 250px;
+
+    @include respond (mobile) {
+        grid-template-columns: 1fr;
+        gap: 87px 0px;
+        padding: 50px 28px;
+        margin:0;
+    }
+}
+
+.service--one {
+    margin-top: 5px;
+    margin-left: -15px;
+
+    @include respond (mobile) {
+        margin-top: -10px;
+        margin-left: -5px;
+    }
+}
+
+.service--one .service__text {
+    padding: 0 45px;
+    margin-top: -5px;
+
+    @include respond (mobile) {
+        margin-top: 0;
+        padding: 0;
+    }
+} 
+
+.service--two {
+    margin-left: -10px;
+    padding: 0 10px;
+
+    @include respond (mobile) {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}
+
+.service--two .service__title {
+    margin-top: 15px;
+
+    @include respond (mobile) {
+        margin-top: 25px;
+    }
+}
+
+.service--three {
+    margin-top: 5px;
+
+    @include respond (mobile) {
+        margin-top: 10px;
+    }
+}
+
+.service--four {
+    margin-top: 12px;
+}
+
+.service--four .service__text {
+    padding: 0 40px;
+
+    @include respond (mobile) {
+        padding: 0;
+    }
+}
+
+.service__title {
+    font-family: "Raleway";
+    font-weight: $boldWeights;
+
+    @include respond (mobile) {
+        font-size: 18px;
+    }
+}
+
+.service__img {
+
+    @include respond (mobile) {
+    width: 65px;
+    height: 65px;
+    }
+}

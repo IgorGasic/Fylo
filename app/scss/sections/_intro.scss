@@ -1,0 +1,62 @@
+.intro {
+    width: 100%;
+    height: 100%;
+}
+
+.intro__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+    background-image: url("../images/bg-curvy-desktop.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: $introDarkBlue;
+    background-size: 100% 270px;
+
+    @include respond (mobile) {
+        background-size: 160% 500px;
+        min-height: 75vh;
+    }
+}
+
+.intro__hero-img {
+    width: 720px;
+    height: 540px;
+
+    @include respond (mobile) {
+        width: 305px;
+        height: 205px;
+        margin-top: 25px;
+    }
+}
+
+.intro__title {
+    @include title($titleFontSize);    
+    width: 742px;
+    margin: 33px;
+    line-height: 1.35;
+
+    @include respond (mobile) {
+        width: 332px;
+        margin: 23px;
+        margin-top: 50px;
+        font-size: $mobileTitleFontSize;
+    }
+}
+
+.intro__text {
+    width: 742px;
+    font-size: 20px;
+    padding: 0 55px;
+    margin-top: 10px;
+    color: $white;
+
+    @include respond (mobile) {
+        width: 350px;
+        font-size: 14px;
+        padding: 0 25px;
+        margin-top: 0;
+    }
+}

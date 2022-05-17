@@ -1,0 +1,99 @@
+.productive {
+    width: 100%;
+    height: 100%;
+    background-color: $mainDarkBlue;
+}
+
+.productive__container {
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+
+    @include respond (mobile) {
+        flex-direction: column;
+        padding: 0 25px;
+        padding-top: 115px;
+    }
+}
+
+.productive__image {
+    height: 460px;
+    width: auto;
+    margin-right: 45px;
+
+    @include respond (mobile) {
+        height: 225px;
+        margin-right: 0;
+        margin-bottom: 52px;
+    }
+}
+
+.productive__content {
+    margin-left: 20px;
+    margin-top: 60px;
+
+    @include respond (mobile) {
+        margin-left: 5px;
+        margin-top: -5px;
+    }
+}
+
+.producitve__title {
+    @include title ($titleFontSize);
+    margin-bottom: 25px;
+    padding-right: 100px;
+
+    @include respond (mobile) {
+        font-size: 18px;
+        padding-right: 0;
+    }
+}
+
+.producitve__text {
+    margin-bottom: 25px;
+    color: $white;
+    font-size: $linkFontSize;
+
+    @include respond (mobile) {
+        font-size: $mainFontSize;
+    }
+}
+
+.producitve__text--one {
+    padding-right: 30px;
+    margin-bottom: 20px;
+
+    @include respond (mobile) {
+        padding-right: 0;
+        margin-top: -7px;
+    }
+}
+
+.producitve__text--two {
+    margin-bottom: 30px;
+
+    @include respond (mobile) {
+        margin-bottom: 23px;
+    }
+}
+
+.productive__link {
+    justify-content: space-around;
+    color: $cyan;
+    border-bottom: 1px solid $cyan;
+    text-decoration: none;
+    font-size: $linkFontSize;
+
+    @include respond (mobile) {
+        font-size: 12px;
+    }
+}
+
+.productive__link-img {
+    vertical-align: middle;
+    margin-left: 10px;
+
+    @include respond (mobile) {
+        margin-left: 5px;
+    }
+}
